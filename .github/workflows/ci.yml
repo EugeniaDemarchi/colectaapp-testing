@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  java-tests:
+    name: Java — JUnit 5 + Mockito + JaCoCo
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend-junit
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - run: mvn -B test
+      - name: Upload JaCoCo coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jacoco-report
+          path: backend-junit/target/site/jacoco/
+
+  ts-quality:
+    name: TypeScript — Prettier + ESLint + Vitest
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ts-quality
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ts-quality/package-lock.json
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run test:coverage   # fails if coverage drops below 80%
+      - run: npm run typecheck

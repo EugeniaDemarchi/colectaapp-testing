@@ -1,0 +1,14 @@
+{
+  "name": "colectaapp-frontend-heredado",
+  "private": true,
+  "description": "Manifiesto HEREDADO con dependencias desactualizadas, armado a propósito para el TP 3 (punto 2). No se instala: solo se audita.",
+  "dependencies": {
+    "axios": "0.21.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.3.0"
+  },
+  "devDependencies": {
+    "vite": "4.0.0"
+  }
+}

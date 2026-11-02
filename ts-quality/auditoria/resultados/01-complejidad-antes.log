@@ -1,0 +1,20 @@
+$ npm run auditoria:complejidad   (ANTES: código heredado)
+
+auditoria/legacy/estadoColecta.legacy.ts
+   9:8   warning  Function 'textoEstadoParticipante' has a complexity of 12. Maximum allowed is 1  complexity
+  13:5   warning  Blocks are nested too deeply (2). Maximum allowed is 1                           max-depth
+  14:7   warning  Blocks are nested too deeply (3). Maximum allowed is 1                           max-depth
+  18:9   warning  Blocks are nested too deeply (4). Maximum allowed is 1                           max-depth
+  23:11  warning  Blocks are nested too deeply (5). Maximum allowed is 1                           max-depth
+  24:13  warning  Blocks are nested too deeply (6). Maximum allowed is 1                           max-depth
+  45:7   warning  Blocks are nested too deeply (3). Maximum allowed is 1                           max-depth
+  60:8   warning  Function 'textoEstadoRecaudador' has a complexity of 11. Maximum allowed is 1    complexity
+  64:5   warning  Blocks are nested too deeply (2). Maximum allowed is 1                           max-depth
+  65:7   warning  Blocks are nested too deeply (3). Maximum allowed is 1                           max-depth
+  70:7   warning  Blocks are nested too deeply (3). Maximum allowed is 1                           max-depth
+  71:9   warning  Blocks are nested too deeply (4). Maximum allowed is 1                           max-depth
+  77:7   warning  Blocks are nested too deeply (3). Maximum allowed is 1                           max-depth
+  82:9   warning  Blocks are nested too deeply (4). Maximum allowed is 1                           max-depth
+
+✖ 14 problems (0 errors, 14 warnings)
+

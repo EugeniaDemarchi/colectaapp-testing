@@ -1,0 +1,14 @@
+# Java / Maven
+target/
+*.class
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Editors / OS
+.idea/
+*.iml
+.vscode/
+.DS_Store

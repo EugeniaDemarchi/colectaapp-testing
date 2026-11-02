@@ -1,0 +1,29 @@
+{
+  "name": "colectaapp-ts-quality",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write src",
+    "format:check": "prettier --check src",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "auditoria:complejidad": "eslint --no-config-lookup -c auditoria/eslint.metricas.config.js auditoria/legacy src/lib",
+    "auditoria:duplicacion": "jscpd auditoria/legacy src --min-tokens 20 --min-lines 1 --reporters console",
+    "auditoria:dependencias": "npm audit && npm outdated"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.13.3",
+    "@vitest/coverage-v8": "^5.0.3",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0",
+    "jscpd": "^5.4.0",
+    "prettier": "^3.9.9",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^5.0.3"
+  }
+}

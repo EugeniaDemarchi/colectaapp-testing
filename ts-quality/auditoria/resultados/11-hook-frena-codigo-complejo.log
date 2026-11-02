@@ -1,0 +1,27 @@
+$ npm run lint   (simulación: alguien copia el código heredado dentro de src)
+   9:8   error  Function 'textoEstadoParticipante' has a complexity of 12. Maximum allowed is 10  complexity
+  12:15  error  Expected '!==' and instead saw '!='                                               eqeqeq
+  13:24  error  Expected '===' and instead saw '=='                                               eqeqeq
+  14:32  error  Expected '===' and instead saw '=='                                               eqeqeq
+  17:25  error  Expected '!==' and instead saw '!='                                               eqeqeq
+  18:9   error  Blocks are nested too deeply (4). Maximum allowed is 3                            max-depth
+  18:27  error  Expected '===' and instead saw '=='                                               eqeqeq
+  23:11  error  Blocks are nested too deeply (5). Maximum allowed is 3                            max-depth
+  24:13  error  Blocks are nested too deeply (6). Maximum allowed is 3                            max-depth
+  24:40  error  Expected '===' and instead saw '=='                                               eqeqeq
+  44:31  error  Expected '===' and instead saw '=='                                               eqeqeq
+  45:18  error  Expected '!==' and instead saw '!='                                               eqeqeq
+  45:43  error  Expected '===' and instead saw '=='                                               eqeqeq
+  51:31  error  Expected '===' and instead saw '=='                                               eqeqeq
+  60:8   error  Function 'textoEstadoRecaudador' has a complexity of 11. Maximum allowed is 10    complexity
+  63:15  error  Expected '!==' and instead saw '!='                                               eqeqeq
+  64:24  error  Expected '===' and instead saw '=='                                               eqeqeq
+  65:19  error  Expected '===' and instead saw '=='                                               eqeqeq
+  65:45  error  Expected '===' and instead saw '=='                                               eqeqeq
+  71:9   error  Blocks are nested too deeply (4). Maximum allowed is 3                            max-depth
+  71:31  error  Expected '===' and instead saw '=='                                               eqeqeq
+  77:19  error  Expected '===' and instead saw '=='                                               eqeqeq
+  82:9   error  Blocks are nested too deeply (4). Maximum allowed is 3                            max-depth
+  92:31  error  Expected '===' and instead saw '=='                                               eqeqeq
+  95:31  error  Expected '===' and instead saw '=='                                               eqeqeq
+✖ 26 problems (26 errors, 0 warnings)

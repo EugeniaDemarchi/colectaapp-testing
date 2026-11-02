@@ -1,0 +1,19 @@
+$ npx jscpd auditoria/legacy --min-tokens 20 --min-lines 1   (ANTES: duplicación)
+Clone found (typescript)
+ - estadoColecta.legacy.ts [9:77 - 14:11] (6 lines, 36 tokens)
+   estadoColecta.legacy.ts [60:60 - 65:11]
+Clone found (typescript)
+ - estadoColecta.legacy.ts [50:7 - 57:2] (8 lines, 33 tokens)
+   estadoColecta.legacy.ts [94:7 - 101:2]
+Clone found (typescript)
+ - estadoColecta.legacy.ts [77:38 - 78:92] (2 lines, 23 tokens)
+   estadoColecta.legacy.ts [85:16 - 86:94]
+┌────────────┬────────────────┬─────────────┬──────────────┬──────────────┬──────────────────┬───────────────────┐
+│ Format     │ Files analyzed │ Total lines │ Total tokens │ Clones found │ Duplicated lines │ Duplicated tokens │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ typescript │ 1              │ 101         │ 623          │ 3            │ 16 (15.84%)      │ 92 (14.77%)       │
+├────────────┼────────────────┼─────────────┼──────────────┼──────────────┼──────────────────┼───────────────────┤
+│ Total:     │ 1              │ 101         │ 623          │ 3            │ 16 (15.84%)      │ 92 (14.77%)       │
+└────────────┴────────────────┴─────────────┴──────────────┴──────────────┴──────────────────┴───────────────────┘
+Found 3 clones.
+time: 3.319ms

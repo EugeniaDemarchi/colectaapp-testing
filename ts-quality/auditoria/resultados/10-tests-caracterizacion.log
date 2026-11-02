@@ -1,0 +1,27 @@
+$ npx vitest run src/lib/estadoColecta.test.ts   (tests de caracterización: nuevo == heredado)
+
+ RUN  v5.0.3 /home/claude/colectaapp-calidad
+
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > es el recaudador 2ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > no participa 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > ya pagó 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > pendiente en término 1ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > vencido con recargo 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > vencido sin tardíos 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > cerrada y pagó 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > cerrada sin pagar 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaParticipante: mismo resultado que el código heredado > entregada 1ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > sin participantes 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > todos pagaron 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > en curso 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > vencida con deudas 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > cerrada 0ms
+ ✓ src/lib/estadoColecta.test.ts > estadoParaRecaudador: mismo resultado que el código heredado > entregada 0ms
+ ✓ src/lib/estadoColecta.test.ts > estaVencida > el mismo día límite todavía no está vencida 0ms
+ ✓ src/lib/estadoColecta.test.ts > estaVencida > al día siguiente sí 0ms
+
+ Test Files  1 passed (1)
+      Tests  17 passed (17)
+   Start at  12:29:08
+   Duration  276ms (transform 69%, import 22%, tests 6%, worker 3%)
+

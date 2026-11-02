@@ -1,0 +1,10 @@
+ % Coverage report from v8
+No files with missing coverage.
+2 files fully covered.
+
+=============================== Coverage summary ===============================
+Statements   : 100% ( 10/10 )
+Branches     : 100% ( 0/0 )
+Functions    : 100% ( 3/3 )
+Lines        : 100% ( 9/9 )
+================================================================================

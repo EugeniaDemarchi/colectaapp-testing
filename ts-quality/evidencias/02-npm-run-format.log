@@ -1,0 +1,12 @@
+src/features/auth/pages/LoginPage.tsx 2ms
+src/features/colectas/pages/ColectasPage.tsx 3ms (unchanged)
+src/features/colectas/pages/InicioPage.tsx 2ms (unchanged)
+src/features/participantes/pages/GrupoPage.tsx 1ms (unchanged)
+src/features/participantes/pages/PerfilPage.tsx 4ms (unchanged)
+src/index.css 16ms
+src/lib/confeti.test.ts 8ms (unchanged)
+src/lib/confeti.ts 8ms
+src/lib/formato.test.ts 5ms (unchanged)
+src/lib/formato.ts 12ms (unchanged)
+src/main.tsx 2ms (unchanged)
+src/styles/tokens.css 23ms

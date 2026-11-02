@@ -1,0 +1,34 @@
+#!/bin/sh
+# ------------------------------------------------------------------
+# Pre-commit hook de ColectaApp (frontend)
+# Se ejecuta solo al hacer `git commit`. Corre 3 controles EN ORDEN.
+# Si uno falla, el script termina con código 1 y Git CANCELA el commit.
+# ------------------------------------------------------------------
+
+# Run from the ts-quality folder (works both standalone and inside this monorepo)
+cd "$(dirname "$0")/.." || exit 1
+
+echo ""
+echo "=== [pre-commit] 1/3 Formatter (Prettier) ==="
+npm run --silent format:check || {
+  echo "X  Formato incorrecto. Corré 'npm run format' y volvé a hacer el commit."
+  exit 1
+}
+
+echo ""
+echo "=== [pre-commit] 2/3 Linter (ESLint) ==="
+npm run --silent lint || {
+  echo "X  El linter encontró problemas. Corregilos y volvé a hacer el commit."
+  exit 1
+}
+
+echo ""
+echo "=== [pre-commit] 3/3 Tests unitarios (Vitest) ==="
+npm run --silent test || {
+  echo "X  Hay tests en rojo. Arreglalos y volvé a hacer el commit."
+  exit 1
+}
+
+echo ""
+echo "OK  Los 3 controles pasaron. Se registra el commit."
+exit 0

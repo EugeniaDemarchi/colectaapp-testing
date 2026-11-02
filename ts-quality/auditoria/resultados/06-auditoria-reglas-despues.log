@@ -1,0 +1,2 @@
+$ npx eslint -c auditoria/eslint.auditoria.config.js src/lib/estadoColecta.ts   (DESPUÉS)
+Sin problemas (código de salida 0)

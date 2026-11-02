@@ -1,0 +1,9 @@
+$ npm run auditoria:complejidad   (DESPUÉS: código refactorizado)
+
+src/lib/estadoColecta.ts
+  45:8  warning  Function 'estadoParaParticipante' has a complexity of 8. Maximum allowed is 1  complexity
+  63:1  warning  Function 'aportePendiente' has a complexity of 3. Maximum allowed is 1         complexity
+  76:8  warning  Function 'estadoParaRecaudador' has a complexity of 5. Maximum allowed is 1    complexity
+
+✖ 3 problems (0 errors, 3 warnings)
+
